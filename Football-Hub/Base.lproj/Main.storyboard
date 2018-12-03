@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Football_Hub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Hub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkv-qe-bK6">
+                                <rect key="frame" x="44" y="84" width="313" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="f8N-ur-gPK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="45"/>
+                                <color key="textColor" red="0.83529411764705885" green="0.57647058823529407" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ball" translatesAutoresizingMaskIntoConstraints="NO" id="HZf-zT-9kq">
+                                <rect key="frame" x="136" y="216" width="103" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="n8o-4A-cg4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zl-rb-dqb">
+                                <rect key="frame" x="16" y="383" width="343" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="bbt-W1-ljr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRA-Bg-aq9">
+                                <rect key="frame" x="16" y="443" width="357" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="7KR-RE-194"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-i8-G2K">
+                                <rect key="frame" x="37" y="598" width="315" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="hwg-42-rtB"/>
+                                </constraints>
+                                <state key="normal" image="GetStarted"/>
+                                <connections>
+                                    <segue destination="gGY-he-ur9" kind="show" id="FRU-Hd-hMf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmU-i8-G2K" firstAttribute="top" secondItem="LRA-Bg-aq9" secondAttribute="bottom" constant="74" id="8Zz-4W-HIp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HZf-zT-9kq" secondAttribute="trailing" constant="136" id="B4G-qR-7C6"/>
+                            <constraint firstItem="LRA-Bg-aq9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Jkc-df-aqM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bkv-qe-bK6" secondAttribute="trailing" constant="18" id="P5r-RY-nfn"/>
+                            <constraint firstItem="Bkv-qe-bK6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="RKY-VX-YHz"/>
+                            <constraint firstItem="Bkv-qe-bK6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="SGm-BM-4rL"/>
+                            <constraint firstItem="fmU-i8-G2K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Trs-4s-XTU"/>
+                            <constraint firstItem="3zl-rb-dqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="USm-ck-eyq"/>
+                            <constraint firstItem="HZf-zT-9kq" firstAttribute="top" secondItem="Bkv-qe-bK6" secondAttribute="bottom" constant="21" id="d7M-cm-V8K"/>
+                            <constraint firstItem="HZf-zT-9kq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="gR1-7b-AR1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fmU-i8-G2K" secondAttribute="trailing" constant="23" id="iTE-jX-PwG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LRA-Bg-aq9" secondAttribute="trailing" constant="2" id="nXM-9J-zfy"/>
+                            <constraint firstItem="3zl-rb-dqb" firstAttribute="top" secondItem="HZf-zT-9kq" secondAttribute="bottom" constant="64" id="p0S-DZ-fEo"/>
+                            <constraint firstItem="LRA-Bg-aq9" firstAttribute="top" secondItem="3zl-rb-dqb" secondAttribute="bottom" constant="32" id="uIM-Fh-MdW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3zl-rb-dqb" secondAttribute="trailing" constant="16" id="uiz-Vi-hbi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionText" destination="LRA-Bg-aq9" id="rBr-SP-0PO"/>
+                        <outlet property="welcomeText" destination="3zl-rb-dqb" id="Q0E-zX-gqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZO9-hg-CJI">
+            <objects>
+                <viewController id="gGY-he-ur9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7hH-Kd-gwi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gbK-qS-czd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLv-TF-xV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ball" width="120.33425903320312" height="119.73258972167969"/>
+        <image name="GetStarted" width="315" height="70"/>
+    </resources>
+</document>
