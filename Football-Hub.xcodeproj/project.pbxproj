@@ -16,6 +16,8 @@
 		B649355B21B58E1200434754 /* Football_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649355A21B58E1200434754 /* Football_HubUITests.swift */; };
 		B649356921B5924000434754 /* TeamPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356821B5924000434754 /* TeamPickViewController.swift */; };
 		B649356B21B5925600434754 /* TeamPickInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356A21B5925600434754 /* TeamPickInfo.swift */; };
+		B649357021B6DE6100434754 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356F21B6DE6100434754 /* TeamTableViewCell.swift */; };
+		B649357221B6E10C00434754 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649357121B6E10C00434754 /* LeagueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B649355C21B58E1200434754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B649356821B5924000434754 /* TeamPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickViewController.swift; sourceTree = "<group>"; };
 		B649356A21B5925600434754 /* TeamPickInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickInfo.swift; sourceTree = "<group>"; };
+		B649356F21B6DE6100434754 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		B649357121B6E10C00434754 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				B649353C21B58E1000434754 /* ViewController.swift */,
 				B649356A21B5925600434754 /* TeamPickInfo.swift */,
 				B649356821B5924000434754 /* TeamPickViewController.swift */,
+				B649357121B6E10C00434754 /* LeagueTableViewCell.swift */,
+				B649356F21B6DE6100434754 /* TeamTableViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -279,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B649356921B5924000434754 /* TeamPickViewController.swift in Sources */,
+				B649357021B6DE6100434754 /* TeamTableViewCell.swift in Sources */,
 				B649353D21B58E1000434754 /* ViewController.swift in Sources */,
 				B649353B21B58E1000434754 /* AppDelegate.swift in Sources */,
+				B649357221B6E10C00434754 /* LeagueTableViewCell.swift in Sources */,
 				B649356B21B5925600434754 /* TeamPickInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

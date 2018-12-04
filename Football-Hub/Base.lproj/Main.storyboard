@@ -141,27 +141,128 @@
         <scene sceneID="Y2c-F7-Kkj">
             <objects>
                 <tableViewController id="Vva-O9-wnD" customClass="TeamPickViewController" customModule="Football_Hub" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QKQ-GL-FXu">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QKQ-GL-FXu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.086274509803921567" green="0.054901960784313725" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="sectionIndexBackgroundColor" red="0.16774863000000001" green="0.011983127329999999" blue="0.0078361965719999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="68" id="nez-gd-p3V">
-                                <rect key="frame" x="0.0" y="28" width="375" height="68"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nez-gd-p3V" id="e0s-cf-De1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="68" id="OCP-QH-r0x">
-                                <rect key="frame" x="0.0" y="96" width="375" height="68"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="123" id="OCP-QH-r0x">
+                                <rect key="frame" x="0.0" y="28" width="375" height="123"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OCP-QH-r0x" id="PEA-RE-ttO">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-Ay-S43">
+                                            <rect key="frame" x="16" y="51" width="287.66666666666669" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="49" id="8Sb-4D-fsU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="33"/>
+                                            <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.086274509799999996" green="0.054901960780000002" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="pcE-Ay-S43" firstAttribute="leading" secondItem="PEA-RE-ttO" secondAttribute="leading" constant="16" id="FM8-vx-bOh"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pcE-Ay-S43" secondAttribute="trailing" constant="20" symbolic="YES" id="Ny0-8M-lz3"/>
+                                        <constraint firstItem="pcE-Ay-S43" firstAttribute="top" secondItem="PEA-RE-ttO" secondAttribute="top" constant="51" id="xK3-Nd-9bJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamCell" rowHeight="119" id="nez-gd-p3V" customClass="TeamTableViewCell" customModule="Football_Hub" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="151" width="375" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nez-gd-p3V" id="e0s-cf-De1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-C4-hwJ">
+                                            <rect key="frame" x="16" y="11" width="343" height="95"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cht-yu-rAF">
+                                                    <rect key="frame" x="8" y="14" width="65" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="hM7-2N-NHv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAo-Si-xs9">
+                                                    <rect key="frame" x="98" y="14" width="237" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="65R-rV-tpf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                                    <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="95" id="AhE-Na-l0M"/>
+                                                <constraint firstItem="cht-yu-rAF" firstAttribute="leading" secondItem="Fgg-C4-hwJ" secondAttribute="leading" constant="8" id="BJ9-lO-AyR"/>
+                                                <constraint firstAttribute="trailing" secondItem="cht-yu-rAF" secondAttribute="trailing" constant="270" id="Cxb-F6-ogJ"/>
+                                                <constraint firstItem="yAo-Si-xs9" firstAttribute="leading" secondItem="cht-yu-rAF" secondAttribute="trailing" constant="25" id="KAG-UX-hvJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="yAo-Si-xs9" secondAttribute="trailing" constant="8" id="MEk-cR-hQj"/>
+                                                <constraint firstItem="yAo-Si-xs9" firstAttribute="top" secondItem="Fgg-C4-hwJ" secondAttribute="top" constant="14" id="mg3-Ih-NbU"/>
+                                                <constraint firstItem="cht-yu-rAF" firstAttribute="top" secondItem="Fgg-C4-hwJ" secondAttribute="top" constant="14" id="w8b-U0-BtZ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Fgg-C4-hwJ" firstAttribute="top" secondItem="e0s-cf-De1" secondAttribute="top" constant="11" id="B5e-Gd-QDM"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fgg-C4-hwJ" secondAttribute="trailing" constant="16" id="FyU-dU-YWo"/>
+                                        <constraint firstItem="Fgg-C4-hwJ" firstAttribute="leading" secondItem="e0s-cf-De1" secondAttribute="leading" constant="16" id="IYW-Yz-dfr"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.054901960780000002" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="teamLogo" destination="cht-yu-rAF" id="CKR-Uy-9ng"/>
+                                    <outlet property="teamName" destination="yAo-Si-xs9" id="UPC-HK-m6M"/>
+                                    <outlet property="teamView" destination="Fgg-C4-hwJ" id="Fsj-0i-w4V"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leagueCell" rowHeight="119" id="81B-C3-77D" customClass="LeagueTableViewCell" customModule="Football_Hub" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="270" width="375" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="81B-C3-77D" id="3Ti-vO-YQP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flv-w6-8kc">
+                                            <rect key="frame" x="16" y="11" width="343" height="95"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-II-LH6">
+                                                    <rect key="frame" x="8" y="14" width="327" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="w9I-rx-i2h"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                                    <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="95" id="iwH-bt-8bv"/>
+                                                <constraint firstAttribute="trailing" secondItem="J0T-II-LH6" secondAttribute="trailing" constant="8" id="mH0-6v-YXI"/>
+                                                <constraint firstItem="J0T-II-LH6" firstAttribute="top" secondItem="Flv-w6-8kc" secondAttribute="top" constant="14" id="rwE-7z-aMk"/>
+                                                <constraint firstItem="J0T-II-LH6" firstAttribute="leading" secondItem="Flv-w6-8kc" secondAttribute="leading" constant="8" id="ylr-7t-vMg"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Flv-w6-8kc" firstAttribute="top" secondItem="3Ti-vO-YQP" secondAttribute="top" constant="11" id="BNA-bi-ePJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Flv-w6-8kc" secondAttribute="trailing" constant="16" id="a3g-zJ-7u1"/>
+                                        <constraint firstItem="Flv-w6-8kc" firstAttribute="leading" secondItem="3Ti-vO-YQP" secondAttribute="leading" constant="16" id="vFc-Ah-Adl"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.054901960780000002" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="leagueName" destination="J0T-II-LH6" id="cAg-bc-2mo"/>
+                                    <outlet property="leagueView" destination="Flv-w6-8kc" id="dyZ-s8-gLR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

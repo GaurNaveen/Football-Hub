@@ -10,15 +10,20 @@ import UIKit
 
 class TeamTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var teamView: UIView!
+    @IBOutlet weak var teamLogo: UIImageView!
+    @IBOutlet weak var teamName: UILabel!
+    
+    func setupCell(logo : UIImage,teamName : String)
+    {
+        teamView.layer.cornerRadius = 12
+        teamView.layer.borderColor = UIColor.black.cgColor
+        teamView.layer.borderWidth = 0.5
+        
+        // Set the team logo and team name
+        teamLogo.image? = logo
+        self.teamName.text? = teamName
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }
