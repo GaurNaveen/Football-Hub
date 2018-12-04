@@ -14,6 +14,8 @@
 		B649354521B58E1200434754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B649354321B58E1200434754 /* LaunchScreen.storyboard */; };
 		B649355021B58E1200434754 /* Football_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649354F21B58E1200434754 /* Football_HubTests.swift */; };
 		B649355B21B58E1200434754 /* Football_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649355A21B58E1200434754 /* Football_HubUITests.swift */; };
+		B649356921B5924000434754 /* TeamPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356821B5924000434754 /* TeamPickViewController.swift */; };
+		B649356B21B5925600434754 /* TeamPickInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356A21B5925600434754 /* TeamPickInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B649355621B58E1200434754 /* Football-HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Football-HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B649355A21B58E1200434754 /* Football_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_HubUITests.swift; sourceTree = "<group>"; };
 		B649355C21B58E1200434754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B649356821B5924000434754 /* TeamPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickViewController.swift; sourceTree = "<group>"; };
+		B649356A21B5925600434754 /* TeamPickInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		B649353921B58E1000434754 /* Football-Hub */ = {
 			isa = PBXGroup;
 			children = (
-				B649353A21B58E1000434754 /* AppDelegate.swift */,
-				B649353C21B58E1000434754 /* ViewController.swift */,
+				B649356E21B5954400434754 /* Others */,
+				B649356C21B5950F00434754 /* Onboarding */,
 				B649353E21B58E1000434754 /* Main.storyboard */,
-				B649354121B58E1200434754 /* Assets.xcassets */,
-				B649354321B58E1200434754 /* LaunchScreen.storyboard */,
 				B649354621B58E1200434754 /* Info.plist */,
+				B649354121B58E1200434754 /* Assets.xcassets */,
 			);
 			path = "Football-Hub";
 			sourceTree = "<group>";
@@ -123,6 +126,25 @@
 				B649355C21B58E1200434754 /* Info.plist */,
 			);
 			path = "Football-HubUITests";
+			sourceTree = "<group>";
+		};
+		B649356C21B5950F00434754 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B649353C21B58E1000434754 /* ViewController.swift */,
+				B649356A21B5925600434754 /* TeamPickInfo.swift */,
+				B649356821B5924000434754 /* TeamPickViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B649356E21B5954400434754 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B649353A21B58E1000434754 /* AppDelegate.swift */,
+				B649354321B58E1200434754 /* LaunchScreen.storyboard */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B649356921B5924000434754 /* TeamPickViewController.swift in Sources */,
 				B649353D21B58E1000434754 /* ViewController.swift in Sources */,
 				B649353B21B58E1000434754 /* AppDelegate.swift in Sources */,
+				B649356B21B5925600434754 /* TeamPickInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

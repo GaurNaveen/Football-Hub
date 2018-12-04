@@ -55,13 +55,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="hwg-42-rtB"/>
                                 </constraints>
-                                <state key="normal" image="GetStarted"/>
+                                <state key="normal" image="Get-Started"/>
                                 <connections>
                                     <segue destination="gGY-he-ur9" kind="show" id="FRU-Hd-hMf"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.054901960784313725" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fmU-i8-G2K" firstAttribute="top" secondItem="LRA-Bg-aq9" secondAttribute="bottom" constant="74" id="8Zz-4W-HIp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HZf-zT-9kq" secondAttribute="trailing" constant="136" id="B4G-qR-7C6"/>
@@ -90,24 +90,94 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
         </scene>
-        <!--View Controller-->
+        <!--Team Pick Info-->
         <scene sceneID="ZO9-hg-CJI">
             <objects>
-                <viewController id="gGY-he-ur9" sceneMemberID="viewController">
+                <viewController id="gGY-he-ur9" customClass="TeamPickInfo" customModule="Football_Hub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hH-Kd-gwi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y84-fh-AqF">
+                                <rect key="frame" x="16" y="101" width="343" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="Nfk-z3-xJ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="29"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-Hf-EzU">
+                                <rect key="frame" x="195" y="298" width="164" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="pZ0-rS-eZi"/>
+                                </constraints>
+                                <state key="normal" image="Next"/>
+                                <connections>
+                                    <segue destination="Vva-O9-wnD" kind="show" id="jtd-Q1-Iwt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.054901960784313725" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yqZ-Hf-EzU" firstAttribute="leading" secondItem="gbK-qS-czd" secondAttribute="leading" constant="195" id="D01-qs-UCC"/>
+                            <constraint firstItem="y84-fh-AqF" firstAttribute="leading" secondItem="gbK-qS-czd" secondAttribute="leading" constant="16" id="Z96-hk-Cvr"/>
+                            <constraint firstItem="gbK-qS-czd" firstAttribute="trailing" secondItem="yqZ-Hf-EzU" secondAttribute="trailing" constant="16" id="cGc-1C-N6O"/>
+                            <constraint firstItem="gbK-qS-czd" firstAttribute="trailing" secondItem="y84-fh-AqF" secondAttribute="trailing" constant="16" id="ggW-oZ-PTi"/>
+                            <constraint firstItem="y84-fh-AqF" firstAttribute="top" secondItem="gbK-qS-czd" secondAttribute="top" constant="57" id="ooE-jU-7RV"/>
+                            <constraint firstItem="yqZ-Hf-EzU" firstAttribute="top" secondItem="y84-fh-AqF" secondAttribute="bottom" constant="70" id="rWL-Qx-aA6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gbK-qS-czd"/>
                     </view>
+                    <connections>
+                        <outlet property="infolabelText" destination="y84-fh-AqF" id="6My-Lu-kRV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLv-TF-xV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="23"/>
+            <point key="canvasLocation" x="808.79999999999995" y="22.906403940886701"/>
+        </scene>
+        <!--Team Pick View Controller-->
+        <scene sceneID="Y2c-F7-Kkj">
+            <objects>
+                <tableViewController id="Vva-O9-wnD" customClass="TeamPickViewController" customModule="Football_Hub" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QKQ-GL-FXu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.054901960784313725" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.16774863000000001" green="0.011983127329999999" blue="0.0078361965719999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="68" id="nez-gd-p3V">
+                                <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nez-gd-p3V" id="e0s-cf-De1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="68" id="OCP-QH-r0x">
+                                <rect key="frame" x="0.0" y="96" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OCP-QH-r0x" id="PEA-RE-ttO">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="68"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vva-O9-wnD" id="ZAX-R9-HyI"/>
+                            <outlet property="delegate" destination="Vva-O9-wnD" id="TwI-pQ-4jG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAW-BA-Yth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517.5999999999999" y="19.95073891625616"/>
         </scene>
     </scenes>
     <resources>
         <image name="Ball" width="120.33425903320312" height="119.73258972167969"/>
-        <image name="GetStarted" width="315" height="70"/>
+        <image name="Get-Started" width="315" height="70"/>
+        <image name="Next" width="164" height="53"/>
     </resources>
 </document>
