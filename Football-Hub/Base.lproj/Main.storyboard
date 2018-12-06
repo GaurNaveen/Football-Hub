@@ -193,7 +193,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="66" id="65R-rV-tpf"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
                                                     <color key="textColor" red="0.83529411760000005" green="0.57647058819999997" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

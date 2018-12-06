@@ -21,7 +21,7 @@ class TeamTableViewCell: UITableViewCell {
         teamView.layer.borderWidth = 0.5
         
         // Set the team logo and team name
-        teamLogo.image? = logo
+        teamLogo.image = logo//UIImage.init(named: "Manchester-United")
         self.teamName.text? = teamName
         
     }
