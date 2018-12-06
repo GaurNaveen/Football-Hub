@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B639D2C721B972A300A589F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D2C621B972A300A589F6 /* LoginViewController.swift */; };
 		B649353B21B58E1000434754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649353A21B58E1000434754 /* AppDelegate.swift */; };
 		B649353D21B58E1000434754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649353C21B58E1000434754 /* ViewController.swift */; };
 		B649354021B58E1000434754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B649353E21B58E1000434754 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B639D2C621B972A300A589F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B649353721B58E1000434754 /* Football-Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football-Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B649353A21B58E1000434754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B649353C21B58E1000434754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B639D2C521B95B8400A589F6 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B649356F21B6DE6100434754 /* TeamTableViewCell.swift */,
+				B649357121B6E10C00434754 /* LeagueTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		B649352E21B58E1000434754 = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +116,10 @@
 		B649353921B58E1000434754 /* Football-Hub */ = {
 			isa = PBXGroup;
 			children = (
+				B649353E21B58E1000434754 /* Main.storyboard */,
 				B649356E21B5954400434754 /* Others */,
 				B649356C21B5950F00434754 /* Onboarding */,
-				B649353E21B58E1000434754 /* Main.storyboard */,
+				B639D2C621B972A300A589F6 /* LoginViewController.swift */,
 				B649354621B58E1200434754 /* Info.plist */,
 				B649354121B58E1200434754 /* Assets.xcassets */,
 			);
@@ -135,11 +147,10 @@
 		B649356C21B5950F00434754 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				B639D2C521B95B8400A589F6 /* Table View Cells */,
 				B649353C21B58E1000434754 /* ViewController.swift */,
 				B649356A21B5925600434754 /* TeamPickInfo.swift */,
 				B649356821B5924000434754 /* TeamPickViewController.swift */,
-				B649357121B6E10C00434754 /* LeagueTableViewCell.swift */,
-				B649356F21B6DE6100434754 /* TeamTableViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B639D2C721B972A300A589F6 /* LoginViewController.swift in Sources */,
 				B649356921B5924000434754 /* TeamPickViewController.swift in Sources */,
 				B649357021B6DE6100434754 /* TeamTableViewCell.swift in Sources */,
 				B649353D21B58E1000434754 /* ViewController.swift in Sources */,

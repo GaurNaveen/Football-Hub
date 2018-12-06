@@ -111,6 +111,8 @@ class TeamPickViewController: UITableViewController {
             // first check if that has border, if true boom , make it clear.
             // Don't use deselect. Creat a normal func here.
             
+            // After the user selects the team take him to the next view.
+            
         }
     }
     
