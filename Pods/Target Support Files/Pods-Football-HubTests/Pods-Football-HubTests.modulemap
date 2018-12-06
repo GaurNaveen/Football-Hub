@@ -1,0 +1,6 @@
+framework module Pods_Football_HubTests {
+  umbrella header "Pods-Football-HubTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
