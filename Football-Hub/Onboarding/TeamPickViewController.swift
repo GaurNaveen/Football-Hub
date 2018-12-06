@@ -55,7 +55,6 @@ class TeamPickViewController: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "leagueCell") as? LeagueTableViewCell else { return UITableViewCell()}
             
             cell.setupCell(name: tableViewData[indexPath.section].leagueName)
-        
             return cell
             
         } else {
@@ -82,19 +81,56 @@ class TeamPickViewController: UITableViewController {
     /// When the user taps on the cell it expands to show all the teams -
     /// - in that particular league
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         // We don't want the expanded view to close when we click on a cell, "if indexpath.row==0" prevents that.
-        if(indexPath.row == 0) {
+        if(indexPath.row == 1) {
             if tableViewData[indexPath.section].opened == true {
                 tableViewData[indexPath.section].opened = false
+                tableView.cellForRow(at: IndexPath.init(row: 0, section: 2))?.selectionStyle = .none
+                
+                print(indexPath)
                 // To make sure we have an array of section
                 let section = IndexSet.init(integer: indexPath.section)
                 tableView.reloadSections(section, with: .none)
             } else {
                 tableViewData[indexPath.section].opened = true
+                tableView.cellForRow(at: IndexPath.init(row: 0, section: 2))?.selectionStyle = .none
+
                 let section = IndexSet.init(integer: indexPath.section)
                 tableView.reloadSections(section, with: .none)
             }
         }
+        // MARK: - Here you can play around with the expanded cells.
+        else{
+            tableView.cellForRow(at: indexPath)?.selectionStyle = .none
+            let cell = tableView.cellForRow(at: indexPath) as! TeamTableViewCell
+            cell.teamView.layer.borderColor = UIColor.init(netHex: 0xED3B6B).cgColor
+            cell.teamView.layer.borderWidth = 5.0
+            //print(indexPath)
+            
+            // Add a method here so that if the user chooses the wrong team , the border disappears.
+            // first check if that has border, if true boom , make it clear.
+            // Don't use deselect. Creat a normal func here.
+            
+        }
+    }
+    
+    
+    
+}
+
+// MARK: - Extension Methods for UIColor and UIView
+// To get Custom Colors or To convert hex code into rgba
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
 }
+
+
