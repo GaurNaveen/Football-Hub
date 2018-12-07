@@ -291,7 +291,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Foj-fI-3co"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="42"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -309,7 +309,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9Bq-xE-5hK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="42"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -337,6 +337,9 @@
                                     <constraint firstAttribute="height" constant="63" id="CFD-fQ-gAB"/>
                                 </constraints>
                                 <state key="normal" image="sign"/>
+                                <connections>
+                                    <action selector="signIn:" destination="Cjp-QR-whZ" eventType="touchUpInside" id="Zu3-RF-Lke"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dN2-cG-P4E">
                                 <rect key="frame" x="23" y="378" width="162" height="38"/>
@@ -380,6 +383,8 @@
                         <viewLayoutGuide key="safeArea" id="arW-OQ-g2s"/>
                     </view>
                     <connections>
+                        <outlet property="ELabel" destination="hTV-fl-NuK" id="zmM-bC-Xpr"/>
+                        <outlet property="PLabel" destination="wtu-9D-ENf" id="nNe-hC-4so"/>
                         <outlet property="password" destination="Xjf-pH-OOY" id="Uis-Xh-MV6"/>
                         <outlet property="userEmail" destination="U4g-7A-fBf" id="ZLe-SS-uqc"/>
                     </connections>
