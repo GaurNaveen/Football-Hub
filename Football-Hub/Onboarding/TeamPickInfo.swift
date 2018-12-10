@@ -20,7 +20,7 @@ class TeamPickInfo: UIViewController {
     }
     
     /// Function is used to set text for label and set the number of lines for it.
-    fileprivate func setupInfoLabel()
+    private func setupInfoLabel()
     {
         infolabelText.text = "Choose your favourite Football League and Football Team."
         infolabelText.numberOfLines = 3

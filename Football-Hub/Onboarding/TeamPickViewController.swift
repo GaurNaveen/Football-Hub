@@ -113,7 +113,6 @@ class TeamPickViewController: UITableViewController {
             // Don't use deselect. Creat a normal func here.
             
             // After the user selects the team take him to the next view.
-            
         }
     }
     
@@ -134,6 +133,7 @@ extension UIColor {
     convenience init(netHex:Int) {
         self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
+    
 }
 
 
