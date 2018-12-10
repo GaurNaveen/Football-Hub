@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A4E59E8A2DF6F1D8021A74D /* Pods_Football_HubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64313B56132C270C92A4066 /* Pods_Football_HubUITests.framework */; };
 		349D619EEEB9839A17E9A844 /* Pods_Football_HubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8296D3B9A3E983553DC28AE /* Pods_Football_HubTests.framework */; };
+		B63441C621BE82240081DDC1 /* EPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63441C521BE82240081DDC1 /* EPL.swift */; };
 		B639D2C721B972A300A589F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D2C621B972A300A589F6 /* LoginViewController.swift */; };
 		B639D2C921B987B900A589F6 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B639D2C821B987B900A589F6 /* credentials.plist */; };
 		B6403CD821BBF07400A2E459 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6403CD721BBF07400A2E459 /* SignUpViewController.swift */; };
@@ -52,6 +53,7 @@
 		53BBF84D9058AF2BFFCDF76D /* Pods-Football-Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football-Hub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Football-Hub/Pods-Football-Hub.release.xcconfig"; sourceTree = "<group>"; };
 		9151ADCA696FD1F136729433 /* Pods-Football-HubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football-HubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Football-HubUITests/Pods-Football-HubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6644E56F43B2077F591146 /* Pods-Football-HubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football-HubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Football-HubTests/Pods-Football-HubTests.release.xcconfig"; sourceTree = "<group>"; };
+		B63441C521BE82240081DDC1 /* EPL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPL.swift; sourceTree = "<group>"; };
 		B639D2C621B972A300A589F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B639D2C821B987B900A589F6 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../Downloads/credentials.plist; sourceTree = "<group>"; };
 		B6403CD721BBF07400A2E459 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				B639D2C621B972A300A589F6 /* LoginViewController.swift */,
 				B6F9534221BE5B8E00C5F54E /* SelectTeamViewController.swift */,
+				B63441C521BE82240081DDC1 /* EPL.swift */,
 				B6F9534421BE63D400C5F54E /* TeamCell.swift */,
 				B6F9534621BE698A00C5F54E /* LeagueCell.swift */,
 			);
@@ -500,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63441C621BE82240081DDC1 /* EPL.swift in Sources */,
 				B6403CE021BD2E7F00A2E459 /* WelcomeViewController.swift in Sources */,
 				B639D2C721B972A300A589F6 /* LoginViewController.swift in Sources */,
 				B649356921B5924000434754 /* TeamPickViewController.swift in Sources */,

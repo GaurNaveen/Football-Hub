@@ -2,11 +2,28 @@
 //  SelectTeamViewController.swift
 //  Football-Hub
 //
+//  This file is responsible for showing the user
+//  all the leagues and the teams in them , so that
+//  they can select their fav team.
+//
 //  Created by Naveen Gaur on 10/12/18.
 //  Copyright © 2018 Naveen Gaur. All rights reserved.
 //
 
 import UIKit
+
+/// Stores the league names and the teams in it.
+struct league {
+    var opened = Bool()
+    var leagueName = String()
+    var teamsInLeague = [team]()
+}
+
+/// Stores the a particular team logo and it's name.
+struct team {
+    var teamLogo = UIImage()
+    var teamName = String()
+}
 
 class SelectTeamViewController: UIViewController {
     var tableViewData = [league]()
@@ -14,14 +31,38 @@ class SelectTeamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        setupTableViewData()
-
+        addDataToTableView()
     }
     
-    func setupTableViewData() {
-        // Break them into 5 differnt methods , each method for one league.
-        tableViewData = [league(opened: false, leagueName: "England - Premier League", teamsInLeague:                                   [team(teamLogo: #imageLiteral(resourceName: "Manchester-United"), teamName: "Manchester United"),team(teamLogo: #imageLiteral(resourceName: "Arsenal"), teamName: "Arsenal  F.C."),team(teamLogo: #imageLiteral(resourceName: "Liverpool"), teamName: "Liverpool F.C."),team(teamLogo: #imageLiteral(resourceName: "Chelsea"), teamName: "Chelsea F.C.")] ),league(opened: false, leagueName: "Ligue 1", teamsInLeague: [team(teamLogo: #imageLiteral(resourceName: "Chelsea"), teamName: "PSG")])]
+    /// Adds the league and it's respective team to the table view cells.
+    func addDataToTableView(){
+        addPremierLeague()
+        addLigue1Teams()
+    }
+    
+    /// Adds the French League to the table view.
+    func addLigue1Teams() {
+        let teamLeagues = PremierLeague.init()
+        var teamData = [team]()
+        let  data = teamLeagues.addLigue1()
+        // Circle over the dictionary to retrive the team's image and it's image.
+        for (key,value) in data {
+            teamData.append(team(teamLogo: value, teamName: key))
+        }
+        // Add it to the table view.
+        tableViewData.append(league(opened: false, leagueName: "Ligue 1", teamsInLeague: teamData))
+    }
+    
+    /// Adds the English League to the table view.
+    func addPremierLeague() {
+        let teamLeagues = PremierLeague.init()
+        var teamData = [team]()
+        // Circle over the dictionary to retrive the team's image and it's image.
+        for (key,value) in teamLeagues.teams {
+            teamData.append(team(teamLogo: value, teamName: key))
+        }
+        // Add data to table view.
+        tableViewData.append(league(opened: false, leagueName: "England - Premier League", teamsInLeague: teamData))
     }
 
 }
@@ -43,7 +84,7 @@ extension SelectTeamViewController  : UITableViewDelegate,UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataIndex = indexPath.row - 1
 
-        // For the Main Heading we use a different cell.
+        // For the League Heading we use a different cell.
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "leagueCell") as? LeagueCell else {return UITableViewCell()}
             cell.setupCell(name: tableViewData[indexPath.section].leagueName)
@@ -79,8 +120,24 @@ extension SelectTeamViewController  : UITableViewDelegate,UITableViewDataSource 
                 let section = IndexSet.init(integer: indexPath.section)
                 tableView.reloadSections(section, with: .none)
             }
+        } else {
+            
+            // MARK: Here you can play around with the expanded cell.
+            tableView.cellForRow(at: indexPath)?.selectionStyle = .none
+            let cell = tableView.cellForRow(at: indexPath) as! TeamCell
+            cell.teamView.layer.borderColor = UIColor.init(netHex: 0xED3B6B).cgColor
+            cell.teamView.layer.borderWidth = 5.0
+            
+            //print(indexPath)
+            
+            // Add a method here so that if the user chooses the wrong team , the border disappears.
+            // first check if that has border, if true boom , make it clear.
+            // Don't use deselect. Creat a normal func here.
+            
+            // After the user selects the team take him to the next view.
         }
     }
+    
     
 }
 

@@ -8,16 +8,9 @@
 
 import UIKit
 
-struct league {
-    var opened = Bool()
-    var leagueName = String()
-    var teamsInLeague = [team]()
-}
 
-struct team {
-    var teamLogo = UIImage()
-    var teamName = String()
-}
+
+
 
 class TeamPickViewController: UITableViewController {
     var headingDisplayed  = Bool()

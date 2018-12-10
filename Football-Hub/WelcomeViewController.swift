@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidAppear(true)
         
         if let user = Auth.auth().currentUser {
-            performSegue(withIdentifier: "toOnboardingScreen", sender: self)
+          //  performSegue(withIdentifier: "toOnboardingScreen", sender: self)
         }
     }
 
