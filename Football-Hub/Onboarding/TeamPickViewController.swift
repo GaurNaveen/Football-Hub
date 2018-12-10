@@ -20,7 +20,7 @@ struct team {
 }
 
 class TeamPickViewController: UITableViewController {
-    
+    var headingDisplayed  = Bool()
     var tableViewData = [league]()
     
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class TeamPickViewController: UITableViewController {
     /// Gives User the oppuurtunity to choose his/her favourite team.
     func setupTableViewData()
     {
-        tableViewData = [league(opened: false, leagueName: "England - Premier League", teamsInLeague: [team(teamLogo: #imageLiteral(resourceName: "Manchester-United"), teamName: "Manchester United"),team(teamLogo: #imageLiteral(resourceName: "Arsenal"), teamName: "Arsenal F.C."),team(teamLogo: #imageLiteral(resourceName: "Liverpool"), teamName: "Liverpool F.C."),team(teamLogo: #imageLiteral(resourceName: "Chelsea"), teamName: "Chelsea F.C.")] )]
+        tableViewData = [league(opened: false, leagueName: "England - Premier League", teamsInLeague:                                   [team(teamLogo: #imageLiteral(resourceName: "Manchester-United"), teamName: "Manchester United"),team(teamLogo: #imageLiteral(resourceName: "Arsenal"), teamName: "Arsenal  F.C."),team(teamLogo: #imageLiteral(resourceName: "Liverpool"), teamName: "Liverpool F.C."),team(teamLogo: #imageLiteral(resourceName: "Chelsea"), teamName: "Chelsea F.C.")] ),league(opened: false, leagueName: "Ligue 1", teamsInLeague: [team(teamLogo: #imageLiteral(resourceName: "Chelsea"), teamName: "PSG")])]
     }
     
     
@@ -48,6 +48,7 @@ class TeamPickViewController: UITableViewController {
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") else {return UITableViewCell()}
             return cell
+            
         }
         
         // For the Title of the league. User clicks on this to expand the teams in that league.

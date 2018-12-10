@@ -7,6 +7,8 @@ target 'Football-Hub' do
 
   # Pods for Football-Hub
 pod 'GoogleSignIn'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'    
 
   target 'Football-HubTests' do
     inherit! :search_paths

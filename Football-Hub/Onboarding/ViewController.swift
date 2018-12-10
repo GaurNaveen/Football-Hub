@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         descriptionText.text = "Get all the latest scores for your favourite team from all over the world."
         descriptionText.numberOfLines = 4
     }
+    
 
 }
 
