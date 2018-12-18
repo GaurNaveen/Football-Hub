@@ -28,9 +28,17 @@ struct team {
 class SelectTeamViewController: UIViewController {
     var tableViewData = [league]()
     
+    
+    @IBOutlet weak var nextButton1: UIButton!
+    
+    @IBAction func nextButton(_ sender: Any) {
+        performSegue(withIdentifier: "toMainDashboard", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nextButton1.isHidden = true
         addDataToTableView()
     }
     
@@ -127,7 +135,7 @@ extension SelectTeamViewController  : UITableViewDelegate,UITableViewDataSource 
             let cell = tableView.cellForRow(at: indexPath) as! TeamCell
             cell.teamView.layer.borderColor = UIColor.init(netHex: 0xED3B6B).cgColor
             cell.teamView.layer.borderWidth = 5.0
-            
+            nextButton1.isHidden = false
             //print(indexPath)
             
             // Add a method here so that if the user chooses the wrong team , the border disappears.

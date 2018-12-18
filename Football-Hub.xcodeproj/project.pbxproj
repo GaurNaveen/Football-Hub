@@ -9,23 +9,22 @@
 /* Begin PBXBuildFile section */
 		0A4E59E8A2DF6F1D8021A74D /* Pods_Football_HubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64313B56132C270C92A4066 /* Pods_Football_HubUITests.framework */; };
 		349D619EEEB9839A17E9A844 /* Pods_Football_HubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8296D3B9A3E983553DC28AE /* Pods_Football_HubTests.framework */; };
+		B6327C5221BEB4B0004D9D48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6327C5121BEB4B0004D9D48 /* ViewController.swift */; };
+		B6327C5421BEB539004D9D48 /* TeamPickInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6327C5321BEB539004D9D48 /* TeamPickInfo.swift */; };
 		B63441C621BE82240081DDC1 /* EPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63441C521BE82240081DDC1 /* EPL.swift */; };
+		B6377A8021BFF64200628494 /* MainDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6377A7F21BFF64200628494 /* MainDashboard.swift */; };
 		B639D2C721B972A300A589F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D2C621B972A300A589F6 /* LoginViewController.swift */; };
 		B639D2C921B987B900A589F6 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B639D2C821B987B900A589F6 /* credentials.plist */; };
 		B6403CD821BBF07400A2E459 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6403CD721BBF07400A2E459 /* SignUpViewController.swift */; };
 		B6403CE021BD2E7F00A2E459 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6403CDF21BD2E7F00A2E459 /* WelcomeViewController.swift */; };
 		B6403CE221BD4BC700A2E459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6403CE121BD4BC700A2E459 /* GoogleService-Info.plist */; };
 		B649353B21B58E1000434754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649353A21B58E1000434754 /* AppDelegate.swift */; };
-		B649353D21B58E1000434754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649353C21B58E1000434754 /* ViewController.swift */; };
 		B649354021B58E1000434754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B649353E21B58E1000434754 /* Main.storyboard */; };
 		B649354221B58E1200434754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B649354121B58E1200434754 /* Assets.xcassets */; };
 		B649354521B58E1200434754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B649354321B58E1200434754 /* LaunchScreen.storyboard */; };
 		B649355021B58E1200434754 /* Football_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649354F21B58E1200434754 /* Football_HubTests.swift */; };
 		B649355B21B58E1200434754 /* Football_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649355A21B58E1200434754 /* Football_HubUITests.swift */; };
 		B649356921B5924000434754 /* TeamPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356821B5924000434754 /* TeamPickViewController.swift */; };
-		B649356B21B5925600434754 /* TeamPickInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356A21B5925600434754 /* TeamPickInfo.swift */; };
-		B649357021B6DE6100434754 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649356F21B6DE6100434754 /* TeamTableViewCell.swift */; };
-		B649357221B6E10C00434754 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649357121B6E10C00434754 /* LeagueTableViewCell.swift */; };
 		B6F9534321BE5B8E00C5F54E /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9534221BE5B8E00C5F54E /* SelectTeamViewController.swift */; };
 		B6F9534521BE63D400C5F54E /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9534421BE63D400C5F54E /* TeamCell.swift */; };
 		B6F9534721BE698A00C5F54E /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9534621BE698A00C5F54E /* LeagueCell.swift */; };
@@ -53,7 +52,10 @@
 		53BBF84D9058AF2BFFCDF76D /* Pods-Football-Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football-Hub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Football-Hub/Pods-Football-Hub.release.xcconfig"; sourceTree = "<group>"; };
 		9151ADCA696FD1F136729433 /* Pods-Football-HubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football-HubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Football-HubUITests/Pods-Football-HubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6644E56F43B2077F591146 /* Pods-Football-HubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football-HubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Football-HubTests/Pods-Football-HubTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6327C5121BEB4B0004D9D48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "/Users/naveengaur/Desktop/Football-Hub/Football-Hub/Onboarding/ViewController.swift"; sourceTree = "<absolute>"; };
+		B6327C5321BEB539004D9D48 /* TeamPickInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickInfo.swift; sourceTree = "<group>"; };
 		B63441C521BE82240081DDC1 /* EPL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPL.swift; sourceTree = "<group>"; };
+		B6377A7F21BFF64200628494 /* MainDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboard.swift; sourceTree = "<group>"; };
 		B639D2C621B972A300A589F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B639D2C821B987B900A589F6 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../Downloads/credentials.plist; sourceTree = "<group>"; };
 		B6403CD721BBF07400A2E459 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +63,6 @@
 		B6403CE121BD4BC700A2E459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B649353721B58E1000434754 /* Football-Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football-Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B649353A21B58E1000434754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B649353C21B58E1000434754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B649353F21B58E1000434754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B649354121B58E1200434754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B649354421B58E1200434754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,9 +74,6 @@
 		B649355A21B58E1200434754 /* Football_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_HubUITests.swift; sourceTree = "<group>"; };
 		B649355C21B58E1200434754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B649356821B5924000434754 /* TeamPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickViewController.swift; sourceTree = "<group>"; };
-		B649356A21B5925600434754 /* TeamPickInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickInfo.swift; sourceTree = "<group>"; };
-		B649356F21B6DE6100434754 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
-		B649357121B6E10C00434754 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
 		B6F9534221BE5B8E00C5F54E /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
 		B6F9534421BE63D400C5F54E /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		B6F9534621BE698A00C5F54E /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
@@ -125,11 +123,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B6327C5721BEB558004D9D48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B63441C521BE82240081DDC1 /* EPL.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B639D2C521B95B8400A589F6 /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				B649356F21B6DE6100434754 /* TeamTableViewCell.swift */,
-				B649357121B6E10C00434754 /* LeagueTableViewCell.swift */,
+				B6F9534421BE63D400C5F54E /* TeamCell.swift */,
+				B6F9534621BE698A00C5F54E /* LeagueCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -138,10 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				B639D2C621B972A300A589F6 /* LoginViewController.swift */,
-				B6F9534221BE5B8E00C5F54E /* SelectTeamViewController.swift */,
-				B63441C521BE82240081DDC1 /* EPL.swift */,
-				B6F9534421BE63D400C5F54E /* TeamCell.swift */,
-				B6F9534621BE698A00C5F54E /* LeagueCell.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				B649353E21B58E1000434754 /* Main.storyboard */,
+				B6377A7F21BFF64200628494 /* MainDashboard.swift */,
 				B649356E21B5954400434754 /* Others */,
 				B649356C21B5950F00434754 /* Onboarding */,
 				B6403CD621BBF04300A2E459 /* Sign Up */,
@@ -187,7 +190,9 @@
 				B649354621B58E1200434754 /* Info.plist */,
 				B639D2C821B987B900A589F6 /* credentials.plist */,
 				B649354121B58E1200434754 /* Assets.xcassets */,
+				B6327C5721BEB558004D9D48 /* Model */,
 				B6403CDF21BD2E7F00A2E459 /* WelcomeViewController.swift */,
+				B649356821B5924000434754 /* TeamPickViewController.swift */,
 				B6403CE121BD4BC700A2E459 /* GoogleService-Info.plist */,
 			);
 			path = "Football-Hub";
@@ -214,10 +219,10 @@
 		B649356C21B5950F00434754 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				B6327C5121BEB4B0004D9D48 /* ViewController.swift */,
+				B6327C5321BEB539004D9D48 /* TeamPickInfo.swift */,
+				B6F9534221BE5B8E00C5F54E /* SelectTeamViewController.swift */,
 				B639D2C521B95B8400A589F6 /* Table View Cells */,
-				B649353C21B58E1000434754 /* ViewController.swift */,
-				B649356A21B5925600434754 /* TeamPickInfo.swift */,
-				B649356821B5924000434754 /* TeamPickViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -503,19 +508,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6327C5221BEB4B0004D9D48 /* ViewController.swift in Sources */,
 				B63441C621BE82240081DDC1 /* EPL.swift in Sources */,
 				B6403CE021BD2E7F00A2E459 /* WelcomeViewController.swift in Sources */,
+				B6377A8021BFF64200628494 /* MainDashboard.swift in Sources */,
 				B639D2C721B972A300A589F6 /* LoginViewController.swift in Sources */,
 				B649356921B5924000434754 /* TeamPickViewController.swift in Sources */,
 				B6403CD821BBF07400A2E459 /* SignUpViewController.swift in Sources */,
 				B6F9534521BE63D400C5F54E /* TeamCell.swift in Sources */,
-				B649357021B6DE6100434754 /* TeamTableViewCell.swift in Sources */,
+				B6327C5421BEB539004D9D48 /* TeamPickInfo.swift in Sources */,
 				B6F9534321BE5B8E00C5F54E /* SelectTeamViewController.swift in Sources */,
-				B649353D21B58E1000434754 /* ViewController.swift in Sources */,
 				B649353B21B58E1000434754 /* AppDelegate.swift in Sources */,
-				B649357221B6E10C00434754 /* LeagueTableViewCell.swift in Sources */,
 				B6F9534721BE698A00C5F54E /* LeagueCell.swift in Sources */,
-				B649356B21B5925600434754 /* TeamPickInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

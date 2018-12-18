@@ -1,9 +1,8 @@
 //
 //  ViewController.swift
-//  Football Hub
+//  
 //
-//  Created by Naveen Gaur on 3/12/18.
-//  Copyright © 2018 Naveen Gaur. All rights reserved.
+//  Created by Naveen Gaur on 10/12/18.
 //
 
 import UIKit
@@ -27,7 +26,4 @@ class ViewController: UIViewController {
         descriptionText.text = "Get all the latest scores for your favourite team from all over the world."
         descriptionText.numberOfLines = 4
     }
-    
-
 }
-

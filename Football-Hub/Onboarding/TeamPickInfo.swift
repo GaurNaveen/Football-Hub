@@ -2,7 +2,7 @@
 //  TeamPickInfo.swift
 //  Football-Hub
 //
-//  Created by Naveen Gaur on 3/12/18.
+//  Created by Naveen Gaur on 10/12/18.
 //  Copyright © 2018 Naveen Gaur. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class TeamPickInfo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setupInfoLabel()
     }
@@ -25,8 +25,6 @@ class TeamPickInfo: UIViewController {
         infolabelText.text = "Choose your favourite Football League and Football Team."
         infolabelText.numberOfLines = 3
     }
-    
 
-    
 
 }

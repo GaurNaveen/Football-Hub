@@ -13,10 +13,12 @@ class PremierLeague {
     private var team = [String: UIImage]()
     var tableViewData = [league]()
 
+    /// Intializer
     init(){
         addTeams()
     }
     
+    /// Function that sets up the English league
     func addTeams() {
         team =  ["Manchester United": #imageLiteral(resourceName: "Manchester-United"),"Arsenal F.C.":#imageLiteral(resourceName: "Arsenal"),"Chelsea F.C.":#imageLiteral(resourceName: "Chelsea"),"Liverpool F.C.":#imageLiteral(resourceName: "Liverpool"),
                  "Totenham Hotspur F.C.":#imageLiteral(resourceName: "spurs"),"West Ham":#imageLiteral(resourceName: "West Ham"),"SouthHamnpton F.C.": #imageLiteral(resourceName: "1200px-FC_Southampton.svg"),
@@ -26,6 +28,10 @@ class PremierLeague {
     }
     
     
+    /// Function that sets up the french league
+    /// teams
+    ///
+    /// - Returns: A dictionary containing frech team name and logo.
     func addLigue1() -> [String:UIImage] {
         var ligue1Teams = [String:UIImage]()
         ligue1Teams = ["PSG": #imageLiteral(resourceName: "PSG"),"Lyon":#imageLiteral(resourceName: "Arsenal"),"Marseille":#imageLiteral(resourceName: "Chelsea"),"OGC Nice":#imageLiteral(resourceName: "Liverpool"),
