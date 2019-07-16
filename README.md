@@ -1,4 +1,4 @@
 # Football-Hub
 
-![Alt text](https://github.com/GaurNaveen/News-App/blob/master/Screenshots/Img1.png "Op")
+![Alt text](https://github.com/GaurNaveen/Football-Hub/blob/master/Webp.net-resizeimage.png "Op")
 
