@@ -1,4 +1,3 @@
 # Football-Hub
 
-![Alt text](https://github.com/GaurNaveen/News-App/tree/master/Screenshots/img1.png "Op")
-
+https://github.com/GaurNaveen/News-App/blob/master/Screenshots/Img1.png
